@@ -15,7 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins installation
 require("lazy").setup({
-        { "nvim-tree/nvim-tree.lua", version="*", lazy=false, dependencies={"nvim-tree/nvim-web-devicons"} }
+        { "nvim-tree/nvim-tree.lua", version="*", lazy=false, dependencies={"nvim-tree/nvim-web-devicons"} },
+                  { "cocopon/iceberg.vim", version="*", lazy=false}
 })
 
 -- Plugins configuration
@@ -79,3 +80,4 @@ vim.cmd("set nowb")
 vim.cmd("set noswapfile")
 vim.cmd("set noerrorbells")
 vim.cmd("set novisualbell")
+vim.cmd("colorscheme iceberg")
